@@ -1,0 +1,178 @@
+﻿
+> frontend@0.0.0 lint
+> eslint .
+
+
+E:\ReceipeApp\frontend\src\components\discovery\CategoryQuickBar.tsx
+  30:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\components\layout\Navbar.tsx
+   61:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   66:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  211:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  235:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  258:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  393:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\components\notifications\NotificationToaster.tsx
+  31:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\components\planner\MealPlannerDrawer.tsx
+  56:6   warning  React Hook useEffect has a missing dependency: 'handleSearch'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  93:14  error    'err' is defined but never used                                                                                  @typescript-eslint/no-unused-vars
+
+E:\ReceipeApp\frontend\src\components\recipes\CreateRecipeForm.tsx
+  125:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\components\recipes\RecipeCard.test.tsx
+  21:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  40:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  53:23  error  'whileHover' is defined but never used    @typescript-eslint/no-unused-vars
+  53:35  error  'transition' is defined but never used    @typescript-eslint/no-unused-vars
+  53:47  error  'whileTap' is defined but never used      @typescript-eslint/no-unused-vars
+  53:69  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\components\recipes\RecipeCard.tsx
+   38:36  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   58:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   62:18  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   70:31  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  206:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  206:78  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  325:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\context\ModalContext.tsx
+  31:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+E:\ReceipeApp\frontend\src\features\auth\authSlice.ts
+  60:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  61:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  69:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\features\auth\authThunks.ts
+  21:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:94  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  33:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\features\recipes\recipeSlice.ts
+  11:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:68  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  55:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  75:55  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  78:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  84:47  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\features\recipes\recipeThunks.ts
+  16:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  26:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  36:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  56:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\features\user\userThunks.ts
+  13:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  33:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\hooks\useWebSocket.tsx
+   37:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+  104:84  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  113:55  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  121:37  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  169:84  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+  175:87  error    Unexpected any. Specify a different type                                                                                        @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\jest.setup.ts
+  5:12  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Admin\AdminDashboard.tsx
+  70:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Auth\ForgotPasswordPage.tsx
+  21:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Auth\LoginPage.test.tsx
+  12:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Auth\LoginPage.tsx
+  37:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Auth\RegisterPage.test.tsx
+  12:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Auth\RegisterPage.tsx
+  45:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Auth\ResetPasswordPage.tsx
+  21:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Community\CommunityDetailPage.tsx
+  83:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Home\FeedPage.test.tsx
+  16:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  18:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Home\FeedPage.tsx
+   55:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  129:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  129:87  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Planner\MealPlannerPage.tsx
+  40:14  error    'err' is defined but never used                                                                                @typescript-eslint/no-unused-vars
+  49:6   warning  React Hook useEffect has a missing dependency: 'fetchPlans'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  69:14  error    'err' is defined but never used                                                                                @typescript-eslint/no-unused-vars
+
+E:\ReceipeApp\frontend\src\pages\Profile\ProfilePage.test.tsx
+  14:23  error  'whileHover' is defined but never used    @typescript-eslint/no-unused-vars
+  14:35  error  'whileTap' is defined but never used      @typescript-eslint/no-unused-vars
+  14:45  error  'transition' is defined but never used    @typescript-eslint/no-unused-vars
+  14:69  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Profile\ProfilePage.tsx
+   82:6   warning  React Hook useEffect has a missing dependency: 'dispatch'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+   98:62  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+  121:28  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+  201:14  error    'err' is defined but never used                                                                              @typescript-eslint/no-unused-vars
+  216:14  error    'err' is defined but never used                                                                              @typescript-eslint/no-unused-vars
+  234:51  error    Unexpected any. Specify a different type                                                                     @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Recipe\RecipeDetailPage.test.tsx
+  16:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Recipe\RecipeDetailPage.tsx
+   36:107  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   87:45   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  114:40   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  151:22   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  156:22   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  309:43   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  326:23   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  326:73   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  437:34   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  438:34   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  570:80   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  581:48   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  582:33   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  582:54   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  736:44   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  783:41   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  790:38   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Recipe\RecipeEditPage.tsx
+  170:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Settings\SettingsPage.tsx
+  43:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+E:\ReceipeApp\frontend\src\pages\Shopping\ShoppingListPage.tsx
+  24:14  error  'err' is defined but never used  @typescript-eslint/no-unused-vars
+
+E:\ReceipeApp\frontend\src\theme\muiTheme.ts
+  55:8  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 103 problems (98 errors, 5 warnings)
+

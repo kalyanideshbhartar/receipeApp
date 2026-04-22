@@ -1,0 +1,967 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.bluepal:recipe-backend >---------------------
+[INFO] Building backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- jacoco:0.8.12:prepare-agent (prepare-agent) @ recipe-backend ---
+[INFO] argLine set to -javaagent:C:\\Users\\Bluepal\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.12\\org.jacoco.agent-0.8.12-runtime.jar=destfile=E:\\ReceipeApp\\backend\\target\\jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ recipe-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 29 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ recipe-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ recipe-backend ---
+[INFO] skip non existing resourceDirectory E:\ReceipeApp\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ recipe-backend ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ recipe-backend ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.bluepal.BackendApplicationTests
+00:21:57.242 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bluepal.BackendApplicationTests]: BackendApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:21:57.763 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.BackendApplicationTests
+00:21:58.747 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:00.403+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.BackendApplicationTests      : Starting BackendApplicationTests using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:00.408+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.BackendApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:05.090+05:30  INFO 7276 --- [recipe-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-08T00:22:05.461+05:30  INFO 7276 --- [recipe-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 337 ms. Found 17 JPA repository interfaces.
+2026-04-08T00:22:08.278+05:30  INFO 7276 --- [recipe-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-08T00:22:09.265+05:30  INFO 7276 --- [recipe-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7dae9ff4
+2026-04-08T00:22:09.272+05:30  INFO 7276 --- [recipe-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-08T00:22:09.606+05:30  INFO 7276 --- [recipe-backend] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/social_recipe_db (PostgreSQL 18.1)
+2026-04-08T00:22:09.711+05:30  WARN 7276 --- [recipe-backend] [           main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: PostgreSQL 18.1 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2026-04-08T00:22:10.428+05:30  INFO 7276 --- [recipe-backend] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 28
+2026-04-08T00:22:10.429+05:30  WARN 7276 --- [recipe-backend] [           main] o.f.core.internal.command.DbMigrate      : outOfOrder mode is active. Migration of schema "public" may not be reproducible.
+2026-04-08T00:22:10.443+05:30  INFO 7276 --- [recipe-backend] [           main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-04-08T00:22:11.137+05:30  INFO 7276 --- [recipe-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-08T00:22:11.549+05:30  INFO 7276 --- [recipe-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-04-08T00:22:11.777+05:30  INFO 7276 --- [recipe-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-08T00:22:13.339+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-08T00:22:13.697+05:30  WARN 7276 --- [recipe-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-08T00:22:13.753+05:30  INFO 7276 --- [recipe-backend] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 18.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-08T00:22:20.567+05:30  INFO 7276 --- [recipe-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-08T00:22:23.117+05:30  INFO 7276 --- [recipe-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-08T00:22:23.920+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-08T00:22:27.122+05:30  WARN 7276 --- [recipe-backend] [           main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.OncePerRequestFilter.doFilter(jakarta.servlet.ServletRequest,jakarta.servlet.ServletResponse,jakarta.servlet.FilterChain) throws jakarta.servlet.ServletException,java.io.IOException] because it is marked as final, consider using interface-based JDK proxies instead.
+2026-04-08T00:22:27.123+05:30  WARN 7276 --- [recipe-backend] [           main] o.s.aop.framework.CglibAopProxy          : Unable to proxy interface-implementing method [public final void org.springframework.web.filter.GenericFilterBean.init(jakarta.servlet.FilterConfig) throws jakarta.servlet.ServletException] because it is marked as final, consider using interface-based JDK proxies instead.
+2026-04-08T00:22:28.562+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Email Service Mode: PRODUCTION (SMTP)
+2026-04-08T00:22:28.756+05:30  INFO 7276 --- [recipe-backend] [           main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-04-08T00:22:28.757+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-04-08T00:22:29.961+05:30  WARN 7276 --- [recipe-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-08T00:22:32.454+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-04-08T00:22:32.455+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@68f7d537]]
+2026-04-08T00:22:32.457+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-04-08T00:22:32.480+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.BackendApplicationTests      : Started BackendApplicationTests in 33.794 seconds (process running for 40.128)
+2026-04-08T00:22:32.490+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ----- DEBUG CATEGORIES -----
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0
+2026-04-08T00:22:32.730+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 1 | Name: [HEALTHY]
+2026-04-08T00:22:32.730+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 2 | Name: [Breakfast]
+2026-04-08T00:22:32.730+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 3 | Name: [Lunch]
+2026-04-08T00:22:32.730+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 4 | Name: [Dinner]
+2026-04-08T00:22:32.730+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 5 | Name: [Dessert]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 6 | Name: [Vegan]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 7 | Name: [Italian]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 8 | Name: [Indian]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 9 | Name: [VEG]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 10 | Name: [Seafood]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 11 | Name: [Baking]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 12 | Name: [Vegetarian]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 13 | Name: [Non-Vegetarian]
+2026-04-08T00:22:32.731+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ID: 14 | Name: [DESSERTS]
+2026-04-08T00:22:32.733+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : ----- DEBUG RECIPES -----
+Hibernate: 
+    select
+        r1_0.id,
+        r1_0.author_id,
+        r1_0.average_rating,
+        r1_0.calories,
+        r1_0.carbs,
+        r1_0.category_id,
+        r1_0.comment_count,
+        r1_0.content,
+        r1_0.cook_time_minutes,
+        r1_0.created_at,
+        r1_0.description,
+        r1_0.fats,
+        r1_0.image_url,
+        r1_0.is_premium,
+        r1_0.is_published,
+        r1_0.like_count,
+        r1_0.prep_time_minutes,
+        r1_0.protein,
+        r1_0.rating_count,
+        r1_0.servings,
+        r1_0.status,
+        r1_0.title,
+        r1_0.updated_at 
+    from
+        recipes r1_0
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.is_active,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+2026-04-08T00:22:32.821+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [sdfg] | Category: [Vegetarian] | CatID: 12
+2026-04-08T00:22:32.821+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [asdfgh] | Category: [Vegetarian] | CatID: 12
+2026-04-08T00:22:32.821+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [chiken Biryani] | Category: [HEALTHY] | CatID: 1
+2026-04-08T00:22:32.821+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [salad] | Category: [Breakfast] | CatID: 2
+2026-04-08T00:22:32.821+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [veg Noodles] | Category: [DESSERTS] | CatID: 14
+2026-04-08T00:22:32.822+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [fish] | Category: [Seafood] | CatID: 10
+2026-04-08T00:22:32.822+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [sdgh] | Category: [VEG] | CatID: 9
+2026-04-08T00:22:32.822+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [asdgh] | Category: [Italian] | CatID: 7
+2026-04-08T00:22:32.822+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [prathaa] | Category: [Vegetarian] | CatID: 12
+2026-04-08T00:22:32.822+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [asdgh] | Category: [Italian] | CatID: 7
+2026-04-08T00:22:32.822+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [Sea Food] | Category: [Seafood] | CatID: 10
+2026-04-08T00:22:32.822+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [qwerty] | Category: [Seafood] | CatID: 10
+2026-04-08T00:22:32.823+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [asdfg] | Category: [HEALTHY] | CatID: 1
+2026-04-08T00:22:32.823+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [asdfgh] | Category: [Vegetarian] | CatID: 12
+2026-04-08T00:22:32.823+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [asdgh] | Category: [VEG] | CatID: 9
+2026-04-08T00:22:32.823+05:30  INFO 7276 --- [recipe-backend] [           main] com.bluepal.DebugDataScanner             : Title: [asdfgh] | Category: [VEG] | CatID: 9
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.bio,
+        u1_0.cover_picture_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.follower_count,
+        u1_0.following_count,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.is_premium_user,
+        u1_0.premium_expiry_date,
+        u1_0.profile_picture_url,
+        u1_0.reputation_level,
+        u1_0.reputation_points,
+        u1_0.is_restricted,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.is_verified 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.bio,
+        u1_0.cover_picture_url,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.follower_count,
+        u1_0.following_count,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.is_premium_user,
+        u1_0.premium_expiry_date,
+        u1_0.profile_picture_url,
+        u1_0.reputation_level,
+        u1_0.reputation_points,
+        u1_0.is_restricted,
+        u1_0.updated_at,
+        u1_0.username,
+        u1_0.is_verified 
+    from
+        users u1_0
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_roles r1_0 
+    where
+        r1_0.user_id=?
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        categories c1_0 
+    where
+        upper(c1_0.name)=upper(?) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        count(*) 
+    from
+        recipes r1_0
+.\mvnw : Mockito is 
+currently self-attaching 
+to enable the 
+inline-mock-maker. This 
+will no longer work in 
+future releases of the 
+JDK. Please add Mockito as 
+an agent to your build 
+what is described in 
+Mockito's documentation: ht
+tps://javadoc.io/doc/org.mo
+ckito/mockito-core/latest/o
+rg/mockito/Mockito.html#0.3
+At line:1 char:1
++ .\mvnw test > 
+backend_test_output.txt 
+2>&1; Get-Content 
+backend_test_ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (Moc  
+  kito is curr...ockito.   
+ html#0.3:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+Java HotSpot(TM) 64-Bit 
+Server VM warning: Sharing 
+is only supported for boot 
+loader classes because 
+bootstrap classpath has 
+been appended
+WARNING: A Java agent has 
+been loaded dynamically (C:
+\Users\Bluepal\.m2\reposito
+ry\net\bytebuddy\byte-buddy
+-agent\1.15.11\byte-buddy-a
+gent-1.15.11.jar)
+WARNING: If a 
+serviceability tool is in 
+use, please run with -XX:+E
+nableDynamicAgentLoading 
+to hide this warning
+WARNING: If a 
+serviceability tool is not 
+in use, please run with -Dj
+dk.instrument.traceUsage 
+for more information
+WARNING: Dynamic loading 
+of agents will be 
+disallowed by default in a 
+future release
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.62 s -- in com.bluepal.BackendApplicationTests
+[INFO] Running com.bluepal.controller.AdminControllerTest
+2026-04-08T00:22:34.227+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.AdminControllerTest]: AdminControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:34.535+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.AdminControllerTest
+2026-04-08T00:22:34.555+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:34.660+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.AdminControllerTest       : Starting AdminControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:34.661+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.AdminControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:40.189+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:22:40.594+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: eb203c7c-e117-42de-99f2-28198c9ed512
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:22:41.060+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:22:41.062+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:22:41.068+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2026-04-08T00:22:41.152+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.AdminControllerTest       : Started AdminControllerTest in 6.601 seconds (process running for 48.801)
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.418 s -- in com.bluepal.controller.AdminControllerTest
+[INFO] Running com.bluepal.controller.AuthControllerTest
+2026-04-08T00:22:42.768+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.AuthControllerTest]: AuthControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:42.892+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.AuthControllerTest
+2026-04-08T00:22:42.904+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:43.077+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.AuthControllerTest  : Starting AuthControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:43.078+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.AuthControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:45.893+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:22:45.944+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 416d09b3-a54c-4e4a-99f4-b49db2048d7f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:22:45.953+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:22:45.954+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:22:45.956+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-04-08T00:22:45.975+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.AuthControllerTest  : Started AuthControllerTest in 3.072 seconds (process running for 53.623)
+2026-04-08T00:22:46.775+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'fullName': Full Name is required
+2026-04-08T00:22:46.831+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'password': Password is required
+2026-04-08T00:22:46.831+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'username': Username must start with a letter and contain only letters, numbers and underscores
+2026-04-08T00:22:46.831+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'email': Email is required
+2026-04-08T00:22:46.834+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'username': Username is required
+2026-04-08T00:22:46.834+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'username': Username must be between 3 and 20 characters
+2026-04-08T00:22:47.829+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'username': Username or Email is required
+2026-04-08T00:22:47.829+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.controller.AuthController    : Validation error on field 'password': Password is required
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.180 s -- in com.bluepal.controller.AuthControllerTest
+[INFO] Running com.bluepal.controller.BookmarkControllerTest
+2026-04-08T00:22:47.905+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.BookmarkControllerTest]: BookmarkControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:47.983+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.BookmarkControllerTest
+2026-04-08T00:22:47.994+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:48.092+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.BookmarkControllerTest    : Starting BookmarkControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:48.093+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.BookmarkControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:49.214+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:22:49.270+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9702f1ab-70e0-453b-8eac-03ccfefdb728
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:22:49.286+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:22:49.286+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:22:49.289+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-04-08T00:22:49.307+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.BookmarkControllerTest    : Started BookmarkControllerTest in 1.314 seconds (process running for 56.955)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.559 s -- in com.bluepal.controller.BookmarkControllerTest
+[INFO] Running com.bluepal.controller.InteractionControllerTest
+2026-04-08T00:22:49.475+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.InteractionControllerTest]: InteractionControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:49.647+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.InteractionControllerTest
+2026-04-08T00:22:49.660+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:49.750+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.InteractionControllerTest          : Starting InteractionControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:49.752+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.InteractionControllerTest          : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:52.762+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:22:52.810+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3dc2da73-6387-4a01-ab23-47962b6c1f23
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:22:52.818+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:22:52.818+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:22:52.819+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-04-08T00:22:52.835+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.InteractionControllerTest          : Started InteractionControllerTest in 3.174 seconds (process running for 60.483)
+2026-04-08T00:22:53.115+05:30  WARN 7276 --- [recipe-backend] [           main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.715 s -- in com.bluepal.controller.InteractionControllerTest
+[INFO] Running com.bluepal.controller.MealPlanControllerTest
+2026-04-08T00:22:53.222+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.MealPlanControllerTest]: MealPlanControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:53.277+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.MealPlanControllerTest
+2026-04-08T00:22:53.283+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:53.343+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.MealPlanControllerTest    : Starting MealPlanControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:53.344+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.MealPlanControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:54.142+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:22:54.193+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6c9ea648-beee-4321-a049-b9aab41ea37d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:22:54.211+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:22:54.214+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:22:54.217+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-04-08T00:22:54.232+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.MealPlanControllerTest    : Started MealPlanControllerTest in 0.949 seconds (process running for 61.881)
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/meal-planner/1
+       Parameters = {_csrf=[Z-86-chzFzHg7iG9F___i5jPQ1-j-utYjVqihgd7Wg7hbEUhU44Dy_hBcVPN30OEI9LL6Pr_bmaawtN172KasGVMaDiACXVF]}
+          Headers = []
+             Body = <no character encoding set>
+    Session Attrs = {SPRING_SECURITY_CONTEXT=SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=testuser, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]}
+
+Handler:
+             Type = com.bluepal.controller.MealPlanController
+           Method = com.bluepal.controller.MealPlanController#deleteMealPlan(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.241 s -- in com.bluepal.controller.MealPlanControllerTest
+[INFO] Running com.bluepal.controller.NotificationControllerTest
+2026-04-08T00:22:54.472+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.NotificationControllerTest]: NotificationControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:54.529+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.NotificationControllerTest
+2026-04-08T00:22:54.538+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:54.645+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.NotificationControllerTest         : Starting NotificationControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:54.646+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.NotificationControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:56.144+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:22:56.213+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6e2c39a3-d8b5-420c-9c0b-a0cdd0c5ff9c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:22:56.227+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:22:56.227+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:22:56.242+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
+2026-04-08T00:22:56.263+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.NotificationControllerTest         : Started NotificationControllerTest in 1.727 seconds (process running for 63.911)
+2026-04-08T00:22:56.324+05:30  WARN 7276 --- [recipe-backend] [           main] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.057 s -- in com.bluepal.controller.NotificationControllerTest
+[INFO] Running com.bluepal.controller.RatingControllerTest
+2026-04-08T00:22:56.575+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.RatingControllerTest]: RatingControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:56.618+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.RatingControllerTest
+2026-04-08T00:22:56.629+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:56.703+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.RatingControllerTest      : Starting RatingControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:56.703+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.RatingControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:22:58.528+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:22:58.560+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 57b9b441-c208-4f21-b6d9-af223f4fa662
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:22:58.576+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:22:58.577+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:22:58.578+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-04-08T00:22:58.591+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.RatingControllerTest      : Started RatingControllerTest in 1.963 seconds (process running for 66.239)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.084 s -- in com.bluepal.controller.RatingControllerTest
+[INFO] Running com.bluepal.controller.RecipeControllerTest
+2026-04-08T00:22:58.687+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.RecipeControllerTest]: RecipeControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:22:58.713+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.RecipeControllerTest
+2026-04-08T00:22:58.718+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:22:58.803+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.RecipeControllerTest      : Starting RecipeControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:22:58.803+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.RecipeControllerTest      : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:23:00.808+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:23:00.905+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: bbefa2e1-c1de-469e-a0fc-361e8099c0d5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:23:00.918+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:23:00.918+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:23:00.922+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2026-04-08T00:23:00.946+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.controller.RecipeControllerTest      : Started RecipeControllerTest in 2.227 seconds (process running for 68.594)
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.797 s -- in com.bluepal.controller.RecipeControllerTest
+[INFO] Running com.bluepal.controller.ShoppingListControllerTest
+2026-04-08T00:23:01.479+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.ShoppingListControllerTest]: ShoppingListControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:23:01.537+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.ShoppingListControllerTest
+2026-04-08T00:23:01.546+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:23:01.592+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.ShoppingListControllerTest         : Starting ShoppingListControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:23:01.593+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.ShoppingListControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:23:03.726+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:23:03.797+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6695a09d-8a1b-4275-83d8-7d13bf3023fd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:23:03.816+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:23:03.816+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:23:03.817+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-04-08T00:23:03.831+05:30  INFO 7276 --- [recipe-backend] [           main] c.b.c.ShoppingListControllerTest         : Started ShoppingListControllerTest in 2.286 seconds (process running for 71.48)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.530 s -- in com.bluepal.controller.ShoppingListControllerTest
+[INFO] Running com.bluepal.controller.StripeControllerTest
+2026-04-08T00:23:06.451+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.StripeController    : SUCCESS: User testuser upgraded to Premium via Stripe. Valid until: 2026-05-08T00:23:06.450028900
+2026-04-08T00:23:06.480+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.StripeController    : SUCCESS: User testuser upgraded to Premium via Stripe. Valid until: 2026-05-08T00:23:06.480512300
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.491 s -- in com.bluepal.controller.StripeControllerTest
+[INFO] Running com.bluepal.controller.UserControllerTest
+2026-04-08T00:23:06.563+05:30  INFO 7276 --- [recipe-backend] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bluepal.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-08T00:23:06.608+05:30  INFO 7276 --- [recipe-backend] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bluepal.BackendApplication for test class com.bluepal.controller.UserControllerTest
+2026-04-08T00:23:06.615+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-04-08T00:23:06.660+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.UserControllerTest  : Starting UserControllerTest using Java 21.0.10 with PID 7276 (started by Bluepal in E:\ReceipeApp\backend)
+2026-04-08T00:23:06.661+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.UserControllerTest  : No active profile set, falling back to 1 default profile: "default"
+2026-04-08T00:23:07.306+05:30  WARN 7276 --- [recipe-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Found 2 UserDetailsService beans, with names [inMemoryUserDetailsManager, com.bluepal.security.CustomUserDetailsService#0]. Global Authentication Manager will not use a UserDetailsService for username/password login. Consider publishing a single UserDetailsService bean.
+2026-04-08T00:23:07.342+05:30  WARN 7276 --- [recipe-backend] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ffd77caf-0d30-4e7d-adec-64114a78307a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-08T00:23:07.350+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-04-08T00:23:07.350+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-04-08T00:23:07.353+05:30  INFO 7276 --- [recipe-backend] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2026-04-08T00:23:07.393+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.controller.UserControllerTest  : Started UserControllerTest in 0.779 seconds (process running for 75.042)
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 s -- in com.bluepal.controller.UserControllerTest
+[INFO] Running com.bluepal.dto.AuthValidationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s -- in com.bluepal.dto.AuthValidationTest
+[INFO] Running com.bluepal.dto.RecipeValidationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s -- in com.bluepal.dto.RecipeValidationTest
+[INFO] Running com.bluepal.exception.GlobalExceptionHandlerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.958 s -- in com.bluepal.exception.GlobalExceptionHandlerTest
+[INFO] Running com.bluepal.exception.PremiumRequiredExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s -- in com.bluepal.exception.PremiumRequiredExceptionTest
+[INFO] Running com.bluepal.exception.ResourceNotFoundExceptionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 s -- in com.bluepal.exception.ResourceNotFoundExceptionTest
+[INFO] Running com.bluepal.security.CustomUserDetailsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.bluepal.security.CustomUserDetailsTest
+[INFO] Running com.bluepal.security.JwtAuthFilterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.084 s -- in com.bluepal.security.JwtAuthFilterTest
+[INFO] Running com.bluepal.security.JwtUtilsTest
+2026-04-08T00:23:10.823+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.security.JwtUtils            : Invalid JWT token: Malformed JWT JSON: ??_???
+2026-04-08T00:23:10.854+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.security.JwtUtils            : JWT claims string is empty: JWT String argument cannot be null or empty.
+2026-04-08T00:23:10.873+05:30 ERROR 7276 --- [recipe-backend] [           main] com.bluepal.security.JwtUtils            : Invalid JWT token: JWT strings must contain exactly 2 period characters. Found: 0
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.954 s -- in com.bluepal.security.JwtUtilsTest
+[INFO] Running com.bluepal.service.impl.AdminServiceImplTest
+2026-04-08T00:23:11.807+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.AdminServiceImpl  : Admin admin merging user source into target
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.123 s -- in com.bluepal.service.impl.AdminServiceImplTest
+[INFO] Running com.bluepal.service.impl.BookmarkServiceImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s -- in com.bluepal.service.impl.BookmarkServiceImplTest
+[INFO] Running com.bluepal.service.impl.CloudinaryServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.454 s -- in com.bluepal.service.impl.CloudinaryServiceImplTest
+[INFO] Running com.bluepal.service.impl.EmailServiceImplTest
+2026-04-08T00:23:13.877+05:30 ERROR 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Mail sender not configured. [DEV-MODE FALLBACK] Reset OTP for a@b.com: 123
+2026-04-08T00:23:13.878+05:30 ERROR 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Mail sender not configured. [DEV-MODE FALLBACK] Verification Token for a@b.com: 123
+2026-04-08T00:23:13.878+05:30 ERROR 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Mail sender not configured. [DEV-MODE FALLBACK] Restriction status for a@b.com: (Restricted: true)
+2026-04-08T00:23:13.936+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Restriction status email sent to: user@example.com (Restricted: true)
+2026-04-08T00:23:13.961+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Password reset email sent to: user@example.com
+2026-04-08T00:23:13.996+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Email Service Mode: PRODUCTION (SMTP)
+2026-04-08T00:23:14.021+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Restriction status email sent to: user@example.com (Restricted: false)
+2026-04-08T00:23:14.030+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Verification email sent to: user@example.com
+2026-04-08T00:23:14.064+05:30  INFO 7276 --- [recipe-backend] [           main] c.bluepal.service.impl.EmailServiceImpl  : Password reset email sent to: user@example.com
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.336 s -- in com.bluepal.service.impl.EmailServiceImplTest
+[INFO] Running com.bluepal.service.impl.MealPlanServiceImplTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s -- in com.bluepal.service.impl.MealPlanServiceImplTest
+[INFO] Running com.bluepal.service.impl.ModerationServiceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.671 s -- in com.bluepal.service.impl.ModerationServiceTest
+[INFO] Running com.bluepal.service.impl.NotificationServiceImplTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s -- in com.bluepal.service.impl.NotificationServiceImplTest
+[INFO] Running com.bluepal.service.impl.RatingServiceImplTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s -- in com.bluepal.service.impl.RatingServiceImplTest
+[INFO] Running com.bluepal.service.impl.RecipeServiceImplTest
+2026-04-08T00:23:16.162+05:30 ERROR 7276 --- [recipe-backend] [           main] c.b.service.impl.RecipeServiceImpl       : [RecipeAccess] ACCESS DENIED - ID: 100, User: free
+2026-04-08T00:23:16.338+05:30 ERROR 7276 --- [recipe-backend] [           main] c.b.service.impl.RecipeServiceImpl       : CRITICAL ERROR in mapToResponse for recipe 100: Mapping Failure
+2026-04-08T00:23:16.650+05:30  WARN 7276 --- [recipe-backend] [           main] c.b.service.impl.RecipeServiceImpl       : Invalid ingredient category: INVALID_CAT_STRING, defaulting to OTHER
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.093 s -- in com.bluepal.service.impl.RecipeServiceImplTest
+[INFO] Running com.bluepal.service.impl.ShoppingListServiceImplTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 s -- in com.bluepal.service.impl.ShoppingListServiceImplTest
+[INFO] Running com.bluepal.service.impl.UserServiceImplTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s -- in com.bluepal.service.impl.UserServiceImplTest
+[INFO] Running com.bluepal.service.RealTimeChefServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s -- in com.bluepal.service.RealTimeChefServiceTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 208, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:34 min
+[INFO] Finished at: 2026-04-08T00:23:17+05:30
+[INFO] ------------------------------------------------------------------------

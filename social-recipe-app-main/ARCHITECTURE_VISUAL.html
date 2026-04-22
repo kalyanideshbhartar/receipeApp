@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Design & Architecture | Social Recipe App</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f53d3d;
+            --secondary: #1a1a1a;
+            --accent: #ff8c00;
+            --bg: #fafafa;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--secondary);
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            letter-spacing: -0.04em;
+            margin: 0;
+            background: linear-gradient(135deg, #f53d3d, #ff8c00);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            color: #666;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+
+        .mermaid {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #eee;
+        }
+
+        .tech-stack {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .tech-item {
+            padding: 20px;
+            border-radius: 16px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .tech-item h3 {
+            margin: 0 0 10px 0;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--primary);
+        }
+
+        .tech-item p {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>System Architecture Diagram</h1>
+        <p class="subtitle">A full-stack N-Tier approach for a scalable Social Recipe Platform</p>
+    </header>
+
+    <div class="mermaid">
+    graph TD
+        subgraph Client_Layer [Client Layer]
+            Browser[Web Browser / Mobile View]
+        end
+
+        subgraph Frontend_App [Frontend - React Vite]
+            UI[Material UI & Tailwind CSS]
+            State[RTK / TanStack Query]
+            Router[React Router 7]
+        end
+
+        subgraph Security [Security Gateway]
+            JWT[JWT Token Interceptor]
+            AuthFilter[Spring Security Filter Chain]
+        end
+
+        subgraph Backend_App [Backend - Spring Boot 3.4]
+            API[REST Controllers]
+            WS[WebSocket / STOMP Endpoints]
+            Service[Business Logic / Services]
+            Repo[JPA Repository Layer]
+        end
+
+        subgraph Infrastructure [Data & External Infrastructure]
+            PostgreSQL[(PostgreSQL 16)]
+            SMTP[SMTP / Mail Service]
+            Stripe[Stripe Payment Gateway]
+            Cloudinary[Cloudinary CDN]
+        end
+
+        %% Connections
+        Browser -- HTTP/HTTPS --> Router
+        Router --> UI
+        UI --> State
+        State -- REST API Call + JWT --> JWT
+        State <--> WS
+        JWT --> AuthFilter
+        AuthFilter --> API
+        API --> Service
+        WS --> Service
+        Service --> Repo
+        Repo --> PostgreSQL
+        
+        %% External Flows
+        Service -- Transaction ID --> Stripe
+        Service -- OTP/Alerts --> SMTP
+        UI -- Direct Upload --> Cloudinary
+        Service -- Auth Signature --> Cloudinary
+
+        %% Styling
+        style Client_Layer fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px
+        style Frontend_App fill:#f0fdf4,stroke:#22c55e,stroke-width:2px
+        style Backend_App fill:#fff7ed,stroke:#f97316,stroke-width:2px
+        style Infrastructure fill:#fef2f2,stroke:#ef4444,stroke-width:2px
+        style Security fill:#fdf4ff,stroke:#d946ef,stroke-width:2px
+    </div>
+
+    <header id="flow-header">
+        <h1>Project Process Flow</h1>
+        <p class="subtitle">The logical journey of users and content through the application</p>
+    </header>
+
+    <div class="mermaid">
+    sequenceDiagram
+        autonumber
+        actor User
+        participant Frontend
+        participant Cloudinary
+        participant Backend
+        participant Database
+        participant Stripe
+        participant Notifications
+        participant Admin
+
+        Note over User, Admin: Phase 1: Onboarding & Identity
+        User->>Frontend: Register (Email/Password)
+        Frontend->>Backend: Post /api/auth/register
+        Backend-->>Database: Save User (Pending)
+        Backend-->>User: Send Email OTP
+        User->>Frontend: Verify OTP
+        Frontend->>Backend: Post /api/auth/verify
+        Backend-->>Database: Mark User Verified
+        
+        Note over User, Admin: Phase 2: Content Creation & Media
+        User->>Frontend: Create Recipe (Images)
+        Frontend->>Backend: Request Upload Signature
+        Backend-->>Frontend: Returns Cloudinary Policy
+        Frontend->>Cloudinary: Direct Image Upload
+        Cloudinary-->>Frontend: Secure Image URL
+        Frontend->>Backend: Post Recipe DTO + Image URL
+        Backend-->>Database: Save Recipe & Award Points
+        Backend-->>Notifications: Broadcast: New Recipe (WebSocket)
+        
+        Note over User, Admin: Phase 3: Planning & Groceries
+        User->>Frontend: Add Recipe to Meal Plan
+        Frontend->>Backend: Post /api/meal-planner
+        Backend-->>Database: Save Meal Entry
+        User->>Frontend: Generate Shopping List
+        Frontend->>Backend: Get /api/shopping-list
+        Backend-->>Database: Aggregate Ingredients
+        Backend-->>Frontend: Compiled List by Category
+
+        Note over User, Admin: Phase 4: Social Connectivity & Discovery
+        User->>Frontend: Follow Creator
+        Frontend->>Backend: Post /api/users/{id}/follow
+        Backend-->>Database: Update Relationship
+        Backend-->>Notifications: Emit: "New Follower" Alert
+        User->>Frontend: View Personalized Feed
+        Frontend->>Backend: Get /api/recipes/feed (Following Only)
+        Backend-->>Database: Query Social Graph + Newest Content
+        Backend-->>Frontend: Tailored JSON Content
+
+        Note over User, Admin: Phase 5: Monetization (Stripe)
+        User->>Frontend: View Premium Recipe
+        Frontend->>Backend: Get Recipe Detail
+        Backend-->>Frontend: 402 Premium Required
+        User->>Frontend: Upgrade to Premium
+        Frontend->>Stripe: Checkout Session
+        Stripe-->>Backend: Webhook: Checkout Success
+        Backend-->>Database: Update User: ROLE_PREMIUM
+        User->>Frontend: View Recipe (Access Granted)
+
+        Note over User, Admin: Phase 6: Administration & Compliance
+        Admin->>Frontend: Access Dashboard Statistics
+        Frontend->>Backend: GET /api/admin/dashboard
+        Backend-->>Database: Fetch Site Metrics
+        Admin->>Frontend: Restrict Malicious User
+        Frontend->>Backend: POST /api/admin/users/restrict
+        Backend-->>Database: Update User: isRestricted=true
+        Backend-->>Database: Log Action (AuditLog)
+        Backend-->>Admin: Success (Audit Log Recorded)
+    </div>
+
+    <div class="tech-stack">
+        <div class="tech-item">
+            <h3>Frontend</h3>
+            <p>React 19, MUI, Tailwind, RTK, TanStack Query</p>
+        </div>
+        <div class="tech-item">
+            <h3>Backend</h3>
+            <p>Spring Boot 3.4, JPA, WebSocket (STOMP)</p>
+        </div>
+        <div class="tech-item">
+            <h3>Reliability</h3>
+            <p>Vitest, ESLint, JaCoCo Coverage</p>
+        </div>
+        <div class="tech-item">
+            <h3>Development Access</h3>
+            <p style="font-size: 0.8rem; font-weight: 500;">
+                User: admin@culinario.com<br>
+                Pass: CulinarioAdmin@2026++
+            </p>
+        </div>
+        <div class="tech-item">
+            <h3>Cloud Media</h3>
+            <p>Cloudinary CDN & SDK</p>
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; 2026 Social Recipe Application Architectures. Confident & Secure.
+    </footer>
+</div>
+
+<script>
+    mermaid.initialize({ 
+        startOnLoad: true,
+        theme: 'base',
+        themeVariables: {
+            fontFamily: 'Inter',
+            primaryColor: '#ffffff',
+            primaryTextColor: '#1a1a1a',
+            lineColor: '#64748b'
+        }
+    });
+</script>
+
+</body>
+</html>

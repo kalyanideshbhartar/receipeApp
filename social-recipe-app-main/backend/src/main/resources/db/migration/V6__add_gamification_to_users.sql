@@ -1,0 +1,3 @@
+ALTER TABLE users ADD COLUMN is_verified BOOLEAN DEFAULT FALSE;
+ALTER TABLE users ADD COLUMN reputation_points INTEGER DEFAULT 0;
+ALTER TABLE users ADD COLUMN reputation_level VARCHAR(50);

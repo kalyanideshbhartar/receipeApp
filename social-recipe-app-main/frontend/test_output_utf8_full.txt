@@ -1,0 +1,1461 @@
+﻿node.exe : npm verbose cli 
+C:\Program 
+Files\nodejs\node.exe C:\Us
+ers\Bluepal\AppData\Roaming
+\npm\node_modules\npm\bin\n
+pm-cli.js
+At C:\Program 
+Files\nodejs\npm.ps1:29 
+char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (npm  
+   verbose cli...\bin\np   
+ m-cli.js:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+npm info using npm@11.11.1
+npm info using 
+node@v22.14.0
+npm verbose title npm test
+npm verbose argv "test" 
+"--loglevel" "verbose"
+npm verbose logfile 
+logs-max:10 dir:C:\Users\Bl
+uepal\AppData\Local\npm-cac
+he\_logs\2026-04-07T18_51_0
+4_413Z-
+npm verbose logfile C:\User
+s\Bluepal\AppData\Local\npm
+-cache\_logs\2026-04-07T18_
+51_04_413Z-debug-0.log
+
+> frontend@0.0.0 test
+> jest
+
+FAIL src/components/recipes
+/RecipeCard.test.tsx 
+(28.036 s)
+  ΓùÅ Console
+
+    console.error
+      React does not 
+recognize the `whileHover` 
+prop on a DOM element. If 
+you intentionally want it 
+to appear in the DOM as a 
+custom attribute, spell it 
+as lowercase `whilehover` 
+instead. If you 
+accidentally passed it 
+from a parent component, 
+remove it from the DOM 
+element.
+
+    [0m [90m 78 |[39m
+     [90m 79 |[39m 
+[36mconst[39m 
+renderWithRouter 
+[33m=[39m (ui[33m:[39m 
+[33mReact[39m[33m.[39m
+[33mReactElement[39m) 
+[33m=>[39m {
+    
+[31m[1m>[22m[39m[90m 
+80 |[39m   
+[36mreturn[39m render(
+     [90m    |[39m       
+         
+[31m[1m^[22m[39m
+     [90m 81 |[39m     [
+33m<[39m[33mBrowserRouter
+[39m[33m>[39m
+     [90m 82 |[39m       
+{ui}
+     [90m 83 |[39m     [
+33m<[39m[33m/[39m[33mBr
+owserRouter[39m[33m>[39m
+[0m
+
+      at validateProperty (
+node_modules/react-dom/cjs/
+react-dom-client.developmen
+t.js:3001:19)
+      at 
+warnUnknownProperties (node
+_modules/react-dom/cjs/reac
+t-dom-client.development.js
+:3146:9)
+      at validateProperties
+InDevelopment (node_modules
+/react-dom/cjs/react-dom-cl
+ient.development.js:19868:9
+)
+      at 
+setInitialProperties (node_
+modules/react-dom/cjs/react
+-dom-client.development.js:
+20491:7)
+      at completeWork (node
+_modules/react-dom/cjs/reac
+t-dom-client.development.js
+:12662:18)
+      at runWithFiberInDEV 
+(node_modules/react-dom/cjs
+/react-dom-client.developme
+nt.js:874:13)
+      at 
+completeUnitOfWork (node_mo
+dules/react-dom/cjs/react-d
+om-client.development.js:17
+777:19)
+      at performUnitOfWork 
+(node_modules/react-dom/cjs
+/react-dom-client.developme
+nt.js:17658:11)
+      at workLoopSync (node
+_modules/react-dom/cjs/reac
+t-dom-client.development.js
+:17469:41)
+      at renderRootSync (no
+de_modules/react-dom/cjs/re
+act-dom-client.development.
+js:17450:11)
+      at performWorkOnRoot 
+(node_modules/react-dom/cjs
+/react-dom-client.developme
+nt.js:16504:11)
+      at performWorkOnRootV
+iaSchedulerTask (node_modul
+es/react-dom/cjs/react-dom-
+client.development.js:18957
+:7)
+      at flushActQueue (nod
+e_modules/react/cjs/react.d
+evelopment.js:590:34)
+      at process.env.NODE_E
+NV.exports.act (node_module
+s/react/cjs/react.developme
+nt.js:884:10)
+      at node_modules/@test
+ing-library/react/dist/act-
+compat.js:46:25
+      at renderRoot (node_m
+odules/@testing-library/rea
+ct/dist/pure.js:189:26)
+      at render (node_modul
+es/@testing-library/react/d
+ist/pure.js:291:10)
+      at renderWithRouter (
+src/components/recipes/Reci
+peCard.test.tsx:80:16)
+      at 
+Object.<anonymous> (src/com
+ponents/recipes/RecipeCard.
+test.tsx:89:5)
+
+  ΓùÅ RecipeCard ΓÇ║ 
+renders recipe details 
+correctly
+
+    TestingLibraryElementEr
+ror: Unable to find an 
+element with the text: 
+30m. This could be because 
+the text is broken up by 
+multiple elements. In this 
+case, you can provide a 
+function for your text 
+matcher to make your 
+matcher more flexible.
+
+    Ignored nodes: 
+comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mstyle[39m=
+[32m"height: 100%; 
+display: flex; width: 
+100%;"[39m
+          [33mtransition[
+39m=[32m"[object 
+Object]"[39m
+          [33mwhilehover[
+39m=[32m"[object 
+Object]"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m
+=[32m"MuiPaper-root 
+MuiPaper-elevation 
+MuiPaper-rounded 
+MuiPaper-elevation1 
+MuiCard-root css-hufnsy-Mui
+Paper-root-MuiCard-root"[3
+9m
+            [33mstyle[39m
+=[32m"--Paper-shadow: 0px 
+2px 1px -1px 
+rgba(0,0,0,0.2),0px 1px 
+1px 0px 
+rgba(0,0,0,0.14),0px 1px 
+3px 0px 
+rgba(0,0,0,0.12);"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[3
+9m=[32m"MuiBox-root 
+css-no6q6y"[39m
+            [36m>[39m
+              
+[36m<img[39m
+                [33malt[3
+9m=[32m"Delicious 
+Pasta"[39m
+                [33mclass
+[39m=[32m"MuiCardMedia-roo
+t MuiCardMedia-media 
+MuiCardMedia-img 
+card-media css-1iemd16-MuiC
+ardMedia-root"[39m
+                [33msrc[3
+9m=[32m"test-image.jpg"[3
+9m
+              [36m/>[39m
+              
+[36m<div[39m
+                [33mclass
+[39m=[32m"MuiBox-root 
+css-g00xob"[39m
+              [36m>[39m
+                
+[36m<svg[39m
+                  [33maria
+-hidden[39m=[32m"true"[3
+9m
+                  [33mclas
+s[39m=[32m"MuiSvgIcon-roo
+t 
+MuiSvgIcon-fontSizeMedium c
+ss-hwl7ii-MuiSvgIcon-root"
+[39m
+                  [33mdata
+-testid[39m=[32m"AccessTi
+meIcon"[39m
+                  [33mfocu
+sable[39m=[32m"false"[39
+m
+                  
+[33mviewBox[39m=[32m"0 
+0 24 24"[39m
+                [36m>[39m
+                  
+[36m<path[39m
+                    
+[33md[39m=[32m"M11.99 
+2C6.47 2 2 6.48 2 12s4.47 
+10 9.99 10C17.52 22 22 
+17.52 22 12S17.52 2 11.99 
+2M12 20c-4.42 
+0-8-3.58-8-8s3.58-8 8-8 8 
+3.58 8 8-3.58 8-8 8"[39m
+                  
+[36m/>[39m
+                  
+[36m<path[39m
+                    
+[33md[39m=[32m"M12.5 
+7H11v6l5.25 3.15.75-1.23-4.
+5-2.67z"[39m
+                  
+[36m/>[39m
+                
+[36m</svg>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"MuiTypography-
+root MuiTypography-caption 
+css-h0kw05-MuiTypography-ro
+ot"[39m
+                [36m>[39m
+                  
+[0m30[0m
+                  [0m 
+min[0m
+                
+[36m</span>[39m
+              
+[36m</div>[39m
+              
+[36m<button[39m
+                [33mclass
+[39m=[32m"MuiButtonBase-ro
+ot MuiIconButton-root 
+MuiIconButton-sizeSmall css
+-tw4rk0-MuiButtonBase-root-
+MuiIconButton-root"[39m
+                [33mdata-t
+estid[39m=[32m"bookmark-b
+utton"[39m
+                [33mtabind
+ex[39m=[32m"0"[39m
+                [33mtype[
+39m=[32m"button"[39m
+              [36m>[39m
+                
+[36m<svg[39m
+                  [33maria
+-hidden[39m=[32m"true"[3
+9m
+                  [33mclas
+s[39m=[32m"MuiSvgIcon-roo
+t MuiSvgIcon-fontSizeSmall 
+css-120dh41-MuiSvgIcon-root
+"[39m
+                  [33mdata
+-testid[39m=[32m"Bookmark
+BorderIcon"[39m
+                  [33mfocu
+sable[39m=[32m"false"[39
+m
+                  
+[33mviewBox[39m=[32m"0 
+0 24 24"[39m
+                [36m>[39m
+                  
+[36m<path[39m
+                    
+[33md[39m=[32m"M17 
+3H7c-1.1 0-1.99.9-1.99 2L5 
+21l7-3 7 
+3V5c0-1.1-.9-2-2-2m0 
+15-5-2.18L7 18V5h10z"[39m
+                  
+[36m/>[39m
+                
+[36m</svg>[39m
+              
+[36m</button>[39m
+            
+[36m</div>[39m
+            [36m<div[39m
+              [33mclass[3
+9m=[32m"MuiCardContent-roo
+t css-1pmfxwx-MuiCardConten
+t-root"[39m
+            [36m>[39m
+              
+[36m<div[39m
+                [33mclass
+[39m=[32m"MuiBox-root 
+css-12a55wq"[39m
+              [36m>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"MuiAvatar-root
+ MuiAvatar-circular css-10j
+12w9-MuiAvatar-root"[39m
+                [36m>[39m
+                  
+[36m<img[39m
+                    [33mcl
+ass[39m=[32m"MuiAvatar-im
+g css-1su80sj-MuiAvatar-img
+"[39m
+                    [33msr
+c[39m=[32m"chef.jpg"[39m
+                  
+[36m/>[39m
+                
+[36m</div>[39m
+                
+[36m<span[39m
+                  [33mclas
+s[39m=[32m"MuiTypography-
+root MuiTypography-caption 
+css-1gn3xsp-MuiTypography-r
+oot"[39m
+                [36m>[39m
+                  
+[0mchef123[0m
+                  
+[36m<svg[39m
+                    [33mar
+ia-hidden[39m=[32m"true"
+[39m
+                    [33mcl
+ass[39m=[32m"MuiSvgIcon-r
+oot 
+MuiSvgIcon-fontSizeMedium c
+ss-hfhtxp-MuiSvgIcon-root"
+[39m
+                    [33mda
+ta-testid[39m=[32m"Verifi
+edIcon"[39m
+                    [33mfo
+cusable[39m=[32m"false"[
+39m
+                    
+[33mviewBox[39m=[32m"0 
+0 24 24"[39m
+                  
+[36m>[39m
+                    
+[36m<path[39m
+                      
+[33md[39m=[32m"m23 12-2.
+44-2.79.34-3.69-3.61-.82-1.
+89-3.2L12 2.96 8.6 1.5 
+6.71 4.69 3.1 5.5l.34 
+3.7L1 12l2.44 2.79-.34 3.7 
+3.61.82L8.6 22.5l3.4-1.47 
+3.4 1.46 1.89-3.19 
+3.61-.82-.34-3.69zm-12.91 
+4.72-3.8-3.81 1.48-1.48 
+2.32 2.33 5.85-5.87 1.48 
+1.48z"[39m
+                    
+[36m/>[39m
+                  
+[36m</svg>[39m
+                
+[36m</span>[39m
+              
+[36m</div>[39m
+              [36m<h6[39m
+                [33mclass
+[39m=[32m"MuiTypography-ro
+ot MuiTypography-h6 css-1kf
+fv4n-MuiTypography-root"[3
+9m
+              [36m>[39m
+                
+[0mDelicious Pasta[0m
+              
+[36m</h6>[39m
+              
+[36m<div[39m
+                [33mclass
+[39m=[32m"MuiBox-root 
+css-14iwnmv"[39m
+              [36m>[39m
+                
+[36m<span[39m
+                  [33maria
+-label[39m=[32m"0 
+Stars"[39m
+                  [33mclas
+s[39m=[32m"MuiRating-root
+ MuiRating-sizeSmall 
+Mui-readOnly css-14td2gk-Mu
+iRating-root"[39m
+                  [33mrole
+[39m=[32m"img"[39m
+                [36m>[39m
+                  
+[36m<span[39m
+                    [33mcl
+ass[39m=[32m"MuiRating-de
+cimal css-1czqjfa-MuiRating
+-decimal"[39m
+                  
+[36m>[39m
+                    
+[36m<span[39m
+                      [33m
+style[39m=[32m"width: 
+0%; overflow: hidden; 
+position: absolute;"[39m
+                    
+[36m>[39m
+                      
+[36m<span[39m
+                        [3
+3mclass[39m=[32m"MuiRatin
+g-icon MuiRating-iconEmpty 
+css-9xw0na-MuiRating-icon"
+[39m
+                      
+[36m>[39m
+                        
+[36m<svg[39m
+                          
+[33maria-hidden[39m=[32m"
+true"[39m
+                          
+[33mclass[39m=[32m"MuiSvg
+Icon-root 
+MuiSvgIcon-fontSizeInherit 
+css-1ckov0h-MuiSvgIcon-root
+"[39m
+                          
+[33mdata-testid[39m=[32m"
+StarBorderIcon"[39m
+                          
+[33mfocusable[39m=[32m"fa
+lse"[39m
+                          
+[33mviewBox[39m=[32m"0 
+0 24 24"[39m
+                        
+[36m>[39m
+                          
+[36m<path[39m
+                           
+ [33md[39m=[32m"M22 
+9.24l-7.19-.62L12 2 9.19 
+8.63 2 9.24l5.46 4.73L5.82 
+21 12 17.27 18.18 
+21l-1.63-7.03L22 9.24zM12 
+15.4l-3.76 2.27 
+1-4.28-3.32-2.88 
+4.38-.38L12 6.1l1.71 4.04 
+4.38.38-3.32 2.88 1 
+4.28L12 15.4z"[39m
+                          
+[36m/>[39m
+                        
+[36m</svg>[39m
+                      
+[36m</span>[39m
+                    
+[36m</span>[39m
+                    
+[36m<span>[39m
+                      
+[36m<span[39m
+                        [3
+3mclass[39m=[32m"MuiRatin
+g-icon MuiRating-iconEmpty 
+css-9xw0na-MuiRating-icon"
+[39m
+                      
+[36m>[39m
+                        
+[36m<svg[39m
+                 ...
+
+    [0m [90m 92 |[39m   
+  expect(screen[33m.[39mg
+etByText([32m'A classic 
+Italian pasta recipe.'[39m
+))[33m.[39mtoBeInTheDocum
+ent()[33m;[39m
+     [90m 93 |[39m     ex
+pect(screen[33m.[39mgetBy
+Text([32m'chef123'[39m))
+[33m.[39mtoBeInTheDocument
+()[33m;[39m
+    
+[31m[1m>[22m[39m[90m 
+94 |[39m     expect(screen
+[33m.[39mgetByText([32m'
+30m'[39m))[33m.[39mtoBeI
+nTheDocument()[33m;[39m 
+[90m// 10 + 20[39m
+     [90m    |[39m       
+            
+[31m[1m^[22m[39m
+     [90m 95 |[39m     ex
+pect(screen[33m.[39mgetBy
+Text([32m'5'[39m))[33m.
+[39mtoBeInTheDocument()[33
+m;[39m [90m// likes[39m
+     [90m 96 |[39m   
+})[33m;[39m
+     [90m 97 |[39m[0m
+
+      at 
+Object.getElementError (nod
+e_modules/@testing-library/
+dom/dist/config.js:37:19)
+      at node_modules/@test
+ing-library/dom/dist/query-
+helpers.js:76:38
+      at node_modules/@test
+ing-library/dom/dist/query-
+helpers.js:52:17
+      at node_modules/@test
+ing-library/dom/dist/query-
+helpers.js:95:19
+      at 
+Object.<anonymous> (src/com
+ponents/recipes/RecipeCard.
+test.tsx:94:19)
+
+PASS src/pages/Recipe/Recip
+eDetailPage.test.tsx 
+(29.663 s)
+FAIL src/pages/Profile/Prof
+ilePage.test.tsx (30.256 s)
+  ΓùÅ ProfilePage ΓÇ║ 
+renders profile 
+information correctly
+
+    Found multiple 
+elements with the text: 
+/testchef/i
+
+    Here are the matching 
+elements:
+
+    Ignored nodes: 
+comments, script, style
+    [36m<h2[39m
+      [33mclass[39m=[32m
+"MuiTypography-root 
+MuiTypography-h2 css-1dhw0p
+q-MuiTypography-root"[39m
+    [36m>[39m
+      [0mtestchef[0m
+    [36m</h2>[39m
+
+    Ignored nodes: 
+comments, script, style
+    [36m<h6[39m
+      [33mclass[39m=[32m
+"MuiTypography-root 
+MuiTypography-subtitle1 css
+-1i456vw-MuiTypography-root
+"[39m
+    [36m>[39m
+      [0m@[0m
+      [0mtestchef[0m
+    [36m</h6>[39m
+
+    (If this is 
+intentional, then use the 
+`*AllBy*` variant of the 
+query (like 
+`queryAllByText`, 
+`getAllByText`, or 
+`findAllByText`)).
+
+    Ignored nodes: 
+comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=
+[32m"bg-mesh MuiBox-root 
+css-rhnbwf"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m
+=[32m"MuiContainer-root 
+MuiContainer-maxWidthLg css
+-5c1adp-MuiContainer-root"
+[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[3
+9m=[32m"MuiPaper-root 
+MuiPaper-elevation 
+MuiPaper-rounded 
+MuiPaper-elevation1 
+glass-card css-y7bczq-MuiPa
+per-root"[39m
+              [33mstyle[3
+9m=[32m"--Paper-shadow: 
+0px 2px 1px -1px 
+rgba(0,0,0,0.2),0px 1px 
+1px 0px 
+rgba(0,0,0,0.14),0px 1px 
+3px 0px 
+rgba(0,0,0,0.12);"[39m
+            [36m>[39m
+              
+[36m<div[39m
+                [33mclass
+[39m=[32m"MuiBox-root 
+css-199cadx"[39m
+              [36m>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"MuiBox-root 
+css-2dm4rt"[39m
+                
+[36m/>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"card-overlay 
+MuiBox-root css-0"[39m
+                
+[36m/>[39m
+              
+[36m</div>[39m
+              
+[36m<div[39m
+                [33mclass
+[39m=[32m"MuiBox-root 
+css-1l82r1f"[39m
+              [36m>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"MuiBox-root 
+css-79elbk"[39m
+                [36m>[39m
+                  
+[36m<div[39m
+                    [33mcl
+ass[39m=[32m"MuiAvatar-ro
+ot MuiAvatar-circular css-1
+75suwp-MuiAvatar-root"[39m
+                  
+[36m>[39m
+                    
+[36m<img[39m
+                      [33m
+class[39m=[32m"MuiAvatar-
+img css-1su80sj-MuiAvatar-i
+mg"[39m
+                      [33m
+src[39m=[32m"test.jpg"[3
+9m
+                    
+[36m/>[39m
+                  
+[36m</div>[39m
+                  
+[36m<div[39m
+                    [33mcl
+ass[39m=[32m"MuiBox-root 
+css-h4m44d"[39m
+                  
+[36m>[39m
+                    
+[36m<svg[39m
+                      [33m
+aria-hidden[39m=[32m"true
+"[39m
+                      [33m
+class[39m=[32m"MuiSvgIcon
+-root 
+MuiSvgIcon-fontSizeMedium c
+ss-1i936yq-MuiSvgIcon-root"
+[39m
+                      [33m
+data-testid[39m=[32m"Veri
+fiedIcon"[39m
+                      [33m
+focusable[39m=[32m"false"
+[39m
+                      
+[33mviewBox[39m=[32m"0 
+0 24 24"[39m
+                    
+[36m>[39m
+                      
+[36m<path[39m
+                        
+[33md[39m=[32m"m23 12-2.
+44-2.79.34-3.69-3.61-.82-1.
+89-3.2L12 2.96 8.6 1.5 
+6.71 4.69 3.1 5.5l.34 
+3.7L1 12l2.44 2.79-.34 3.7 
+3.61.82L8.6 22.5l3.4-1.47 
+3.4 1.46 1.89-3.19 
+3.61-.82-.34-3.69zm-12.91 
+4.72-3.8-3.81 1.48-1.48 
+2.32 2.33 5.85-5.87 1.48 
+1.48z"[39m
+                      
+[36m/>[39m
+                    
+[36m</svg>[39m
+                  
+[36m</div>[39m
+                
+[36m</div>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"MuiBox-root 
+css-xjqpdy"[39m
+                [36m>[39m
+                  
+[36m<div[39m
+                    [33mcl
+ass[39m=[32m"MuiBox-root 
+css-1hkunrb"[39m
+                  
+[36m>[39m
+                    
+[36m<div[39m
+                      [33m
+class[39m=[32m"MuiBox-roo
+t css-0"[39m
+                    
+[36m>[39m
+                      
+[36m<h2[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-h2 css-1dhw0p
+q-MuiTypography-root"[39m
+                      
+[36m>[39m
+                        
+[0mtestchef[0m
+                      
+[36m</h2>[39m
+                      
+[36m<h6[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-subtitle1 css
+-1i456vw-MuiTypography-root
+"[39m
+                      
+[36m>[39m
+                        
+[0m@[0m
+                        
+[0mtestchef[0m
+                      
+[36m</h6>[39m
+                      
+[36m<span[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-caption css-1
+foa7sa-MuiTypography-root"
+[39m
+                      
+[36m>[39m
+                        
+[0mExecutive Chef[0m
+                        
+[0m ΓÇó [0m
+                        
+[0m1250[0m
+                        
+[0m Rep[0m
+                      
+[36m</span>[39m
+                    
+[36m</div>[39m
+                    
+[36m<div[39m
+                      [33m
+class[39m=[32m"MuiBox-roo
+t css-10egq61"[39m
+                    
+[36m>[39m
+                      
+[36m<button[39m
+                        [3
+3mclass[39m=[32m"MuiButto
+nBase-root MuiButton-root 
+MuiButton-contained 
+MuiButton-containedPrimary 
+MuiButton-sizeMedium MuiBut
+ton-containedSizeMedium 
+MuiButton-colorPrimary 
+MuiButton-root 
+MuiButton-contained 
+MuiButton-containedPrimary 
+MuiButton-sizeMedium MuiBut
+ton-containedSizeMedium 
+MuiButton-colorPrimary css-
+hsfo5v-MuiButtonBase-root-M
+uiButton-root"[39m
+                        [3
+3mtabindex[39m=[32m"0"[3
+9m
+                        [3
+3mtype[39m=[32m"button"[
+39m
+                      
+[36m>[39m
+                        
+[0mFollow[0m
+                      
+[36m</button>[39m
+                      
+[36m<button[39m
+                        [3
+3maria-label[39m=[32m"Com
+munity Pulse"[39m
+                        [3
+3mclass[39m=[32m"MuiButto
+nBase-root 
+MuiIconButton-root 
+MuiIconButton-sizeMedium cs
+s-13jpvcb-MuiButtonBase-roo
+t-MuiIconButton-root"[39m
+                        [3
+3mdata-mui-internal-clone-e
+lement[39m=[32m"true"[39
+m
+                        [3
+3mtabindex[39m=[32m"0"[3
+9m
+                        [3
+3mtype[39m=[32m"button"[
+39m
+                      
+[36m>[39m
+                        
+[36m<svg[39m
+                          
+[33maria-hidden[39m=[32m"
+true"[39m
+                          
+[33mclass[39m=[32m"MuiSvg
+Icon-root 
+MuiSvgIcon-colorPrimary 
+MuiSvgIcon-fontSizeMedium c
+ss-1wtp6o0-MuiSvgIcon-root"
+[39m
+                          
+[33mdata-testid[39m=[32m"
+HubIcon"[39m
+                          
+[33mfocusable[39m=[32m"fa
+lse"[39m
+                          
+[33mviewBox[39m=[32m"0 
+0 24 24"[39m
+                        
+[36m>[39m
+                          
+[36m<path[39m
+                           
+ [33md[39m=[32m"M8.4 
+18.2c.38.5.6 1.12.6 1.8 0 
+1.66-1.34 3-3 
+3s-3-1.34-3-3 1.34-3 
+3-3c.44 0 .85.09 1.23.26l1.
+41-1.77c-.92-1.03-1.29-2.39
+-1.09-3.69l-2.03-.68c-.54.8
+3-1.46 1.38-2.52 1.38-1.66 
+0-3-1.34-3-3s1.34-3 3-3 3 
+1.34 3 3c0 .07 0 .14-.01.21
+l2.03.68c.64-1.21 
+1.82-2.09 
+3.22-2.32V5.91C9.96 5.57 9 
+4.4 9 3c0-1.66 1.34-3 
+3-3s3 1.34 3 3c0 1.4-.96 
+2.57-2.25 2.91v2.16c1.4.23 
+2.58 1.11 3.22 2.32L18 
+9.71V9.5c0-1.66 1.34-3 
+3-3s3 1.34 3 3-1.34 3-3 
+3c-1.06 0-1.98-.55-2.52-1.3
+7l-2.03.68c.2 1.29-.16 
+2.65-1.09 3.69l1.41 
+1.77Q17.34 17 18 17c1.66 0 
+3 1.34 3 3s-1.34 3-3 3-3-1.
+34-3-3c0-.68.22-1.3.6-1.8l-
+1.41-1.77c-1.35.75-3.01.76-
+4.37 0z"[39m
+                          
+[36m/>[39m
+                        
+[36m</svg>[39m
+                      
+[36m</button>[39m
+                    
+[36m</div>[39m
+                  
+[36m</div>[39m
+                  
+[36m<p[39m
+                    [33mcl
+ass[39m=[32m"MuiTypograph
+y-root MuiTypography-body1 
+css-8ktx0t-MuiTypography-ro
+ot"[39m
+                  
+[36m>[39m
+                    
+[0mTest Bio[0m
+                  
+[36m</p>[39m
+                  
+[36m<div[39m
+                    [33mcl
+ass[39m=[32m"MuiBox-root 
+css-s99wjr"[39m
+                  
+[36m>[39m
+                    
+[36m<div[39m
+                      [33m
+class[39m=[32m"MuiBox-roo
+t css-x9npx9"[39m
+                    
+[36m>[39m
+                      
+[36m<h5[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-h5 css-1pd4sa
+a-MuiTypography-root"[39m
+                      
+[36m>[39m
+                        
+[0m100[0m
+                      
+[36m</h5>[39m
+                      
+[36m<span[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-caption css-q
+q5zfj-MuiTypography-root"[
+39m
+                      
+[36m>[39m
+                        
+[0mFollowers[0m
+                      
+[36m</span>[39m
+                    
+[36m</div>[39m
+                    
+[36m<div[39m
+                      [33m
+class[39m=[32m"MuiBox-roo
+t css-x9npx9"[39m
+                    
+[36m>[39m
+                      
+[36m<h5[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-h5 css-1pd4sa
+a-MuiTypography-root"[39m
+                      
+[36m>[39m
+                        
+[0m50[0m
+                      
+[36m</h5>[39m
+                      
+[36m<span[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-caption css-q
+q5zfj-MuiTypography-root"[
+39m
+                      
+[36m>[39m
+                        
+[0mFollowing[0m
+                      
+[36m</span>[39m
+                    
+[36m</div>[39m
+                    
+[36m<div[39m
+                      [33m
+class[39m=[32m"MuiBox-roo
+t css-xi606m"[39m
+                    
+[36m>[39m
+                      
+[36m<h5[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-h5 css-1pd4sa
+a-MuiTypography-root"[39m
+                      
+[36m>[39m
+                        
+[0m0[0m
+                      
+[36m</h5>[39m
+                      
+[36m<span[39m
+                        [3
+3mclass[39m=[32m"MuiTypog
+raphy-root 
+MuiTypography-caption css-q
+q5zfj-MuiTypography-root"[
+39m
+                      
+[36m>[39m
+                        
+[0mRecipes[0m
+                      
+[36m</span>[39m
+                    
+[36m</div>[39m
+                  
+[36m</div>[39m
+                
+[36m</div>[39m
+              
+[36m</div>[39m
+            
+[36m</div>[39m
+            [36m<div[39m
+              [33mclass[3
+9m=[32m"MuiGrid-root 
+MuiGrid-container 
+MuiGrid-direction-xs-row 
+MuiGrid-spacing-xs-4 css-kq
+g16c-MuiGrid-root"[39m
+            [36m>[39m
+              
+[36m<div[39m
+                [33mclass
+[39m=[32m"MuiGrid-root 
+MuiGrid-direction-xs-row 
+MuiGrid-grid-xs-12 css-yqiq
+nf-MuiGrid-root"[39m
+              [36m>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"MuiBox-root 
+css-146t5nv"[39m
+                [36m>[39m
+                  
+[36m<div[39m
+                    [33mcl
+ass[39m=[32m"MuiBox-root 
+css-11axgh"[39m
+                  
+[36m>[39m
+                    
+[36m<div[39m
+                      [33m
+class[39m=[32m"MuiTabs-ro
+ot css-9wzql6-MuiTabs-root"
+[39m
+                    
+[36m>[39m
+                      
+[36m<div[39m
+                        [3
+3mclass[39m=[32m"MuiTabs-
+scroller MuiTabs-fixed css-
+s2t35c-MuiTabs-scroller"[3
+9m
+                        [3
+3mstyle[39m=[32m"overflow
+: hidden; margin-bottom: 
+0px;"[39m
+                      
+[36m>[39m
+                        
+[36m<div[39m
+                          
+[33mclass[39m=[32m"MuiTab
+s-list 
+MuiTabs-flexContainer css-h
+zcega-MuiTabs-list"[39m
+                          
+[33mrole[39m=[32m"tablist
+"[39m
+                        
+[36m>[39m
+                          
+[36m<button[39m
+                           
+ [33maria-selected[39m=[
+32m"true"[39m
+                           
+ [33mclass[39m=[32m"MuiB
+uttonBase-root MuiTab-root 
+MuiTab-textColorPrimary 
+Mui-selected css-1usuzwp-Mu
+iButtonBase-root-MuiTab-roo
+t"[39m
+                           
+ [33mrole[39m=[32m"tab"
+[39m
+                           
+ [33mtabindex[39m=[32m"0
+"[39m
+                           
+ [33mtype[39m=[32m"butto
+n"[39m
+                          
+[36m>[39m
+                           
+ [0mCollection[0m
+                          
+[36m</button>[39m
+                          
+[36m<button[39m
+                           
+ [33maria-selected[39m=[
+32m"false"[39m
+                           
+ [33mclass[39m=[32m"MuiB
+uttonBase-root MuiTab-root 
+MuiTab-textColorPrimary css
+-1usuzwp-MuiButtonBase-root
+-MuiTab-root"[39m
+                           
+ [33mrole[39m=[32m"tab"
+[39m
+                           
+ [33mtabindex[39m=[32m"-
+1"[39m
+                           
+ [33mtype[39m=[32m"butto
+n"[39m
+                          
+[36m>[39m
+                           
+ [0mLiked[0m
+                          
+[36m</button>[39m
+                        
+[36m</div>[39m
+                        
+[36m<span[39m
+                          
+[33mclass[39m=[32m"MuiTab
+s-indicator css-1qltlow-Mui
+Tabs-indicator"[39m
+                          
+[33mstyle[39m=[32m"left: 
+0px; width: 0px;"[39m
+                        
+[36m/>[39m
+                      
+[36m</div>[39m
+                    
+[36m</div>[39m
+                  
+[36m</div>[39m
+                
+[36m</div>[39m
+                
+[36m<div[39m
+                  [33mclas
+s[39m=[32m"MuiBox-root 
+css-6qh6j4"[39m
+                [36m>[39m
+                  
+[36m<div[39m
+                    [33mcl
+ass[39m=[32m"MuiBox-root 
+css-1skhsv4"[39m
+                  
+[36m>[39m
+                    
+[36m<div[39m
+                      [33m
+class[39m=[32m"MuiBox-roo
+t css-1tpcz9h"[39m
+                    
+[36m>[39m
+                      
+[36m<svg[39m
+                        [3
+3maria-hidden[39m=[32m"tr
+ue"[39m
+                        [3
+3mclass[39m=[32m"MuiSvgIc
+on-root 
+MuiSvgIcon-fontSizeMedium c
+ss-1vcq0k-MuiSvgIcon-root"
+[39m
+                        [3
+3mdata-testid[39m=[32m"Re
+staurantMenuIcon"[39m
+                        [3
+3mfocusable[39m=[32m"fals
+e"[39m
+                        
+[33mviewBox[39m=[32m"0 
+0 24 24"[39m
+                      
+[36m>[39m
+                        
+[36m<path[39m
+                          
+[33md[39m=[32m"m8.1 
+13.34 2.83-2.83L3.91 
+3.5c-1.56 1.56-1.56 4.09 0 
+5.66zm6.78-1.81c1.53.71 
+3.68.21 5.27-1.38 
+1.91-1.91 2.28-4.65.81-6.12
+-1.46-1.46-4.2-1.1-6.12.81-
+1.59 1.59-2.09 3.74-1.38 
+5.27L3.7 19.87l1.41 
+1.41L12 14.41l6.88 6.88 
+1.41-1.41L13.41 13z"[39m
+                        
+[36m/>[39m
+                      
+[36m</svg>[39m
+                    
+[36m</div>[39m
+                    
+[36m<h4[39m
+                      [33m
+class[39m=[32m"MuiTypogra
+phy-root MuiTypography-h4 c
+ss-godxrj-MuiTypography-roo
+t"[39m
+                    
+[36m>[39m
+                      
+[0mEmpty Culinary 
+Canvas[0m
+                    
+[36m</h4>[39m
+                    
+[36m<p[39m
+                      [33m
+class[39m=[32m"MuiTypogra
+phy-root 
+MuiTypography-body1 css-cp9
+c1h-MuiTypography-root"[39
+m
+                    
+[36m>[39m
+                      
+[0mEvery great chef 
+starts with a blank slate. 
+Begin your journey by 
+sharing your first 
+masterpiece.[0m
+                    
+[36m</p>[39m
+                    
+[36m<button[39m
+                      [33m
+class[39m=[32m"MuiButtonB
+ase-root MuiButton-root 
+MuiButton-contained 
+MuiButton-containedPrimary 
+MuiButton-sizeMedium MuiBut
+ton-containedSizeMedium 
+MuiButton-colorPrimary 
+MuiButton-root 
+MuiButton-contained 
+MuiButton-containedPrimary 
+MuiButton-sizeMedium MuiBut
+ton-containedSizeMedium 
+MuiButton-colorPrimary css-
+2fujwb-MuiButtonBase-root-M
+uiButton-root"[39m
+                      [33m
+tabindex[39m=[32m"0"[39m
+                      [33m
+type[39m=[32m"button"[39
+m
+                    
+[36m>[39m
+                      
+[0mDiscover 
+Inspiration[0m
+                    
+[36m</button>[39m
+                  
+[36m</div>[39m
+                
+[36m</div>[39m
+              
+[36m</div>[39m
+            
+[36m</div>[39m
+          [36m</div>[39m
+          [36m<div[39m
+            [33mdata-testi
+d[39m=[32m"edit-modal"[3
+9m
+          [36m>[39m
+            
+[0mEditProfileModal[0m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+    [0m [90m 81 |[39m   
+    [33m<[39m[33m/[39m
+[33mQueryClientProvider[39
+m[33m>[39m
+     [90m 82 |[39m     
+)[33m;[39m
+    
+[31m[1m>[22m[39m[90m 
+83 |[39m     
+expect([36mawait[39m scre
+en[33m.[39mfindByText([3
+5m/testchef/i[39m[33m,[3
+9m {}[33m,[39m { 
+timeout[33m:[39m 
+[35m3000[39m }))[33m.[3
+9mtoBeInTheDocument()[33m;
+[39m
+     [90m    |[39m       
+                  
+[31m[1m^[22m[39m
+     [90m 84 |[39m     
+expect([36mawait[39m scre
+en[33m.[39mfindByText([3
+2m'100'[39m))[33m.[39mto
+BeInTheDocument()[33m;[39
+m
+     [90m 85 |[39m   
+})[33m;[39m
+     [90m 86 |[39m[0m
+
+      at waitForWrapper (no
+de_modules/@testing-library
+/dom/dist/wait-for.js:163:2
+7)
+      at node_modules/@test
+ing-library/dom/dist/query-
+helpers.js:86:33
+      at 
+Object.<anonymous> (src/pag
+es/Profile/ProfilePage.test
+.tsx:83:25)
+
+PASS src/pages/Home/FeedPag
+e.test.tsx (5.49 s)
+PASS src/pages/Auth/Registe
+rPage.test.tsx (7.3 s)
+PASS src/hooks/__tests__/us
+eAuth.test.ts
+PASS src/pages/Auth/LoginPa
+ge.test.tsx (6.21 s)
+PASS src/components/recipes
+/__tests__/QuickCommentModa
+l.test.tsx
+
+Test Suites: 2 failed, 6 
+passed, 8 total
+Tests:       2 failed, 25 
+passed, 27 total
+Snapshots:   0 total
+Time:        41.96 s
+Ran all test suites.
+npm verbose cwd 
+E:\ReceipeApp\frontend
+npm verbose os Windows_NT 
+10.0.19045
+npm verbose node v22.14.0
+npm verbose npm  v11.11.1
+npm verbose exit 1
+npm verbose code 1

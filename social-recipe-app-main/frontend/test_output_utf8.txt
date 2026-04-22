@@ -1,0 +1,182 @@
+﻿
+> frontend@0.0.0 test
+> jest
+
+node.exe : PASS src/pag
+es/Auth/LoginPage.test.
+tsx (18.559 s)
+At C:\Program Files\nod
+ejs\npm.ps1:29 char:3
++   & $NODE_EXE 
+$NPM_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (PASS src/page   
+ s/....tsx (18.559     
+s):String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+FAIL src/components/rec
+ipes/RecipeCard.test.ts
+x
+  ΓùÅ Test suite 
+failed to run
+
+    [96msrc/components
+/recipes/RecipeCard.tes
+t.tsx[0m:[93m56[0m:
+[93m34[0m - 
+[91merror[0m[90m 
+TS2739: [0mType '{ 
+id: number; title: 
+string; description: 
+string; imageUrl: 
+string; 
+prepTimeMinutes: 
+number; 
+cookTimeMinutes: 
+number; likeCount: 
+number; commentCount: 
+number; isLiked: 
+boolean; isBookmarked: 
+boolean; category: 
+string; author: { ...; 
+}; }' is missing the 
+following properties 
+from type 
+'RecipeSummary': 
+servings, createdAt
+
+    [7m56[0m     rend
+erWithRouter(<RecipeCar
+d recipe={mockRecipe} 
+/>);
+    [7m  [0m [91m   
+                       
+       ~~~~~~[0m
+
+      [96msrc/componen
+ts/recipes/RecipeCard.t
+sx[0m:[93m21[0m:[93
+m3[0m
+        [7m21[0m   
+recipe: RecipeSummary;
+        [7m  [0m 
+[96m  ~~~~~~[0m
+        The expected 
+type comes from 
+property 'recipe' 
+which is declared here 
+on type 
+'IntrinsicAttributes & 
+RecipeCardProps'
+    [96msrc/components
+/recipes/RecipeCard.tes
+t.tsx[0m:[93m67[0m:
+[93m34[0m - 
+[91merror[0m[90m 
+TS2739: [0mType '{ 
+id: number; title: 
+string; description: 
+string; imageUrl: 
+string; 
+prepTimeMinutes: 
+number; 
+cookTimeMinutes: 
+number; likeCount: 
+number; commentCount: 
+number; isLiked: 
+boolean; isBookmarked: 
+boolean; category: 
+string; author: { ...; 
+}; }' is missing the 
+following properties 
+from type 
+'RecipeSummary': 
+servings, createdAt
+
+    [7m67[0m     rend
+erWithRouter(<RecipeCar
+d recipe={mockRecipe} 
+onLike={onLikeMock} 
+/>);
+    [7m  [0m [91m   
+                       
+       ~~~~~~[0m
+
+      [96msrc/componen
+ts/recipes/RecipeCard.t
+sx[0m:[93m21[0m:[93
+m3[0m
+        [7m21[0m   
+recipe: RecipeSummary;
+        [7m  [0m 
+[96m  ~~~~~~[0m
+        The expected 
+type comes from 
+property 'recipe' 
+which is declared here 
+on type 
+'IntrinsicAttributes & 
+RecipeCardProps'
+    [96msrc/components
+/recipes/RecipeCard.tes
+t.tsx[0m:[93m78[0m:
+[93m34[0m - 
+[91merror[0m[90m 
+TS2739: [0mType '{ 
+id: number; title: 
+string; description: 
+string; imageUrl: 
+string; 
+prepTimeMinutes: 
+number; 
+cookTimeMinutes: 
+number; likeCount: 
+number; commentCount: 
+number; isLiked: 
+boolean; isBookmarked: 
+boolean; category: 
+string; author: { ...; 
+}; }' is missing the 
+following properties 
+from type 
+'RecipeSummary': 
+servings, createdAt
+
+    [7m78[0m     rend
+erWithRouter(<RecipeCar
+d recipe={mockRecipe} 
+/>);
+    [7m  [0m [91m   
+                       
+       ~~~~~~[0m
+
+      [96msrc/componen
+ts/recipes/RecipeCard.t
+sx[0m:[93m21[0m:[93
+m3[0m
+        [7m21[0m   
+recipe: RecipeSummary;
+        [7m  [0m 
+[96m  ~~~~~~[0m
+        The expected 
+type comes from 
+property 'recipe' 
+which is declared here 
+on type 
+'IntrinsicAttributes & 
+RecipeCardProps'
+
+Test Suites: 1 failed, 
+1 passed, 2 total
+Tests:       4 passed, 
+4 total
+Snapshots:   0 total
+Time:        26.279 s
+Ran all test suites.
