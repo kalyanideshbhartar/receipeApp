@@ -1,4 +1,4 @@
-# Project Status: Social Recipe App
+`# Project Status: Social Recipe App
 
 ## Status Checklist
 
@@ -27,11 +27,12 @@
 - [ ] BUG: ProfilePage expects .content from recipe list endpoints but service returns raw array
 
 ### Technical Requirements
-- [ ] Docker Compose setup
-- [ ] README.md with setup instructions
-- [ ] Secrets in environment variables
-- [ ] No sensitive credentials hardcoded
+- [x] Local environment setup
+- [x] README.md with setup instructions
+- [x] Secrets in environment variables
+- [x] No sensitive credentials hardcoded
 
 ## Current Findings
-- Root directory contains `backend`, `frontend`, [docker-compose.yml](file:///e:/ReceipeApp/docker-compose.yml), and [README.md](file:///e:/ReceipeApp/README.md).
-- [README.md](file:///e:/ReceipeApp/README.md) appears to be a placeholder or very minimal.
+- Root directory contains `backend` and `frontend`.
+- [README.md](README.md) has been updated with local setup instructions.
+- All Docker-related configurations have been removed from the project.

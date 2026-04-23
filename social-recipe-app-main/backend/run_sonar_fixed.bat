@@ -14,7 +14,7 @@ echo [PRE-CHECK] Verifying SonarQube accessibility...
 curl.exe -s --max-time 10 %SONAR_URL%/api/server/version > nul
 if %ERRORLEVEL% NEQ 0 (
     echo [ERROR] SonarQube is NOT responding at %SONAR_URL%.
-    echo Please ensure the Docker container is running.
+    echo Please ensure the SonarQube server is running.
     exit /b 1
 )
 echo [OK] SonarQube is accessible!

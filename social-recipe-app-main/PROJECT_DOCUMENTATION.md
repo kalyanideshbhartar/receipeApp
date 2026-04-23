@@ -88,7 +88,8 @@ The project maintains high stability through a dual-layered testing approach.
 
 ---
 
-## 🚀 Deployment
+## 🚀 Local Environment
 
-- **Docker**: The application is containerized with a `docker-compose.yml` defining `app` and `db` services.
-- **Environment**: Controlled via `.env` file for secrets.
+- **Setup**: The application runs locally using Maven for the backend and NPM/Vite for the frontend.
+- **Database**: Requires a local PostgreSQL instance (default port 5432).
+- **Environment**: Configuration is managed via a `.env` file for secrets and API keys.
